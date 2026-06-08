@@ -156,7 +156,7 @@
           // Hard-navigate to the root with a cache-busting param.
           // Using the origin (not current href) ensures we don't carry forward
           // stale route state.  The browser will fetch fresh HTML + new chunks.
-          var dest = window.location.origin + '?_app_recover=' + Date.now();
+          var dest = window.location.origin + '/Global/?_app_recover=' + Date.now();
           window.location.replace(dest);
         }
 
